@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: radial-gradient(pink 8%, #a6a7ec 95%, transparent 207%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: fangsong;
+    font-style: italic;
+    font-size: 30px;
+}
+
+#hearding {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    /* chống xuống hàng khi phóng to */
+    text-wrap: nowrap;
+}
+
+#hearding > img {
+    height: 50%;
+}
+
+h3 {
+    font-size: 1em;
+    color: #ec1ca8cc;
+    position: relative;
+    top: -100%;
+}
+
+/* btn */
+button {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.6em;
+    height: 2.3em;
+    color: #fff;
+    background-color: #ec1ca8cc;
+    border: none;
+    border-radius: 1.1em;
+    font-size: 0.8em;
+    font-family: fangsong;
+    font-style: italic;
+    font-weight: bolder;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    opacity: 0.6; /* Opacity khi rê chuột vào */
+}
+
+#btnYes {
+    position: relative;
+    top: -69%;
+}
+
+#btnNo {
+    z-index: 10;
+    position: absolute;
+    top: 80%;
+    transition: all 0.3s;
+    
+}
+
+.btn--container {
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    padding: 10px;
+    /* width: 8.4em;
+    line-height: 2.9em; */
+    /* height: 38px; */
+}
+
+
+/* Modal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal--container {
+    width: 90%;
+    height: 60%;
+    background-color: #fff;
+    position: relative;
+    display: grid;
+    place-items: center;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.modal--no--heard,
+.modal-heard {
+    display: grid;
+    place-items: center;
+}
+
+.modal--no--heard > img,
+.modal-heard > img {
+    width: 60%;
+}
+
+.modal--body {
+    text-align: center;
+    position: relative;
+    top: -25%;
+}
+.modal--body h4 {
+    color: #ec1ca8cc;
+    font-size: 1.9em;
+}
+
+.modal--body p {
+    color: #ec1ca8cc;
+    margin-top: 16px;
+    font-size: 0.9em;
+}
+
+/* Modal no */
+
+.modal--no {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;    
+}
+
+.modal--no.open--no {
+    display: flex;
+}
+
+.modal--no--heard > img {
+    width: 60%;
+}
